@@ -8,10 +8,7 @@ if (!mongoUri) {
 }
 
 mongoose
-  .connect(mongoUri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(mongoUri)
   .then(() => {
     console.log("Connected to MongoDB");
   })
